@@ -1,0 +1,173 @@
+/* ---------------------------------------------------- */
+/* ----------------- MAIN_CONTAINER ------------------- */
+/* ---------------------------------------------------- */
+
+.i-main-container {
+	display: flex;
+	flex: auto;
+	flex-direction: column;
+}
+
+/* ---------------------------------------------------- */
+/* --------------------- HEADER ----------------------- */
+/* ---------------------------------------------------- */
+
+.i-header-wrapper {
+	position: fixed;
+	right: 0;
+	left: 0;
+	background-color: #000;
+}
+
+.i-header-container {
+	margin: 0 auto;
+	padding: 0 16px;
+	height: 80px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 1170px;
+}
+
+.i-header-title {
+	font-size: 34px;
+}
+
+.i-brand-item {
+	display: inline-block;
+}
+
+.i-header-title {
+	font-size: 34px;
+}
+
+.i-header-nav {
+	display: inline-block;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.5;	
+}
+
+.i-nav-ul {
+	display: inline-flex;
+	padding: 0;
+}
+
+.i-header-item {
+	display: inline-block;
+	font-size: 16px;
+	line-height: inherit;
+}
+
+.i-signin-item, .i-signup-item{
+	padding: 28px 17px;
+	display: block;
+	text-decoration: none;
+	font-weight: 700;
+}
+
+/* --------------------------------------------------------------- */
+
+.i-mobile-navi {
+	display: none;
+}
+
+.i-hamburger-wrapper-ref:hover .i-ham1, .i-hamburger-wrapper-ref:hover .i-ham2, .i-hamburger-wrapper-ref:hover .i-ham3 {
+	background-color: hsla(0, 0%, 100%, .7);
+}
+
+.i-hamburger {
+	padding-top: 3px;
+	width: 24px;
+	height: 21px;
+	cursor: pointer;
+}
+
+.i-ham1, .i-ham2, .i-ham3 {
+	width: inherit;
+	height: 3px;
+	background-color: #fff;
+	/* transition: 0.2s; */
+	border-radius: 6px;
+}
+
+.i-ham2 {
+	margin: 6px 0px;
+}
+
+/* --------------------------------------------------- */
+/* --------------- SECTION_CONTAINER ----------------- */
+/* --------------------------------------------------- */
+
+.i-section-wrapper {
+	padding-top: 80px;
+}
+
+.i-content-spacing {
+	padding: 0 18px;
+	max-width: 1955px;
+}
+
+.i-content-header {
+	color: #fff;
+	padding: 16px 0;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 28px;
+}
+
+.i-content-grid {
+	display: grid;
+	grid-gap: 16px;
+	grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+}
+
+.i-content-image {
+	border-radius: 50%;
+	height: 100%;
+	width: 100%;
+}
+
+/* ----------------------------------------------------- */
+
+.i-container {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	background-color: #282828;
+	border-radius: 14px;
+	padding: 16px;
+}
+
+.i-content {
+	/* background-color: #44464E;  */
+	border-radius: 50%;
+	box-shadow: 0 10px 30px 0 rgba(0, 0, 0, .3), 0 1px 2px 0 rgba(0, 0, 0, .2);
+	margin-bottom: 16px;
+}
+
+.i-button {
+	margin-top: 10px;
+	width: 100%; 
+	height: 35px;
+	background-color: #1db954; 
+	border-radius: 8px;
+	border: 0;
+	color: #fff;
+	font-size: 12px;
+}
+
+.i-button:hover {
+	background-color: #1ed760;
+}
+
+/* --------------------------------------------------- */
+/* ---------------- ASIDE_CONTAINER ------------------ */
+/* --------------------------------------------------- */
+
+
+/* .aside-wrapper {
+	padding-top: 80px;
+	width: 24%;
+} */
+
