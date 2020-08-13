@@ -1,0 +1,24 @@
+<main class="main-container">
+	<div class="main">
+		<div class="main-form">
+			<NuxtLink class="form-header-teemate" to="/">TeeMate</NuxtLink>
+			<div class="form-header">Регистрация</div>
+			<form action="/profile" method="POST">
+				<div class="user-form">
+					<label class="form-label">Username</label>
+					<input class="form-control" type="text" name="login" value="">
+					<label class="form-label">E-mail</label>
+					<input class="form-control" type="email" name="email" value="">
+					<label class="form-label">Пароль</label>
+					<input class="form-control" type="password" name="password">
+					<label class="form-label">Пароль еще раз</label>
+					<input class="form-control" type="password" name="password_repeat">
+					<button class="submit-button-primary" type="submit" name="do_signup">Зарегистрироваться</button>
+				</div>
+			</form>
+			<div class="form-additionals">
+				<span class="form-additional">Уже зарегистрированы? <NuxtLink class="form-additional-link" to="/signin">Войдите</NuxtLink></span>
+			</div>
+		</div>
+	</div>
+</main>

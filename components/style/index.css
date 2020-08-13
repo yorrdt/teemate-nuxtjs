@@ -2,7 +2,7 @@
 /* ----------------- MAIN_CONTAINER ------------------- */
 /* ---------------------------------------------------- */
 
-.i-main-container {
+.main-container {
 	display: flex;
 	flex: auto;
 	flex-direction: column;
@@ -12,14 +12,14 @@
 /* --------------------- HEADER ----------------------- */
 /* ---------------------------------------------------- */
 
-.i-header-wrapper {
+.header-wrapper {
 	position: fixed;
 	right: 0;
 	left: 0;
 	background-color: #000;
 }
 
-.i-header-container {
+.header-container {
 	margin: 0 auto;
 	padding: 0 16px;
 	height: 80px;
@@ -29,37 +29,37 @@
 	max-width: 1170px;
 }
 
-.i-header-title {
+.header-title {
 	font-size: 34px;
 }
 
-.i-brand-item {
+.brand-item {
 	display: inline-block;
 }
 
-.i-header-title {
+.header-title {
 	font-size: 34px;
 }
 
-.i-header-nav {
+.header-nav {
 	display: inline-block;
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 1.5;	
 }
 
-.i-nav-ul {
+.nav-ul {
 	display: inline-flex;
 	padding: 0;
 }
 
-.i-header-item {
+.header-item {
 	display: inline-block;
 	font-size: 16px;
 	line-height: inherit;
 }
 
-.i-signin-item, .i-signup-item{
+.signin-item, .signup-item{
 	padding: 28px 17px;
 	display: block;
 	text-decoration: none;
@@ -68,22 +68,22 @@
 
 /* --------------------------------------------------------------- */
 
-.i-mobile-navi {
+.mobile-navi {
 	display: none;
 }
 
-.i-hamburger-wrapper-ref:hover .i-ham1, .i-hamburger-wrapper-ref:hover .i-ham2, .i-hamburger-wrapper-ref:hover .i-ham3 {
+.hamburger-wrapper-ref:hover .ham1, .hamburger-wrapper-ref:hover .ham2, .hamburger-wrapper-ref:hover .ham3 {
 	background-color: hsla(0, 0%, 100%, .7);
 }
 
-.i-hamburger {
+.hamburger {
 	padding-top: 3px;
 	width: 24px;
 	height: 21px;
 	cursor: pointer;
 }
 
-.i-ham1, .i-ham2, .i-ham3 {
+.ham1, .ham2, .ham3 {
 	width: inherit;
 	height: 3px;
 	background-color: #fff;
@@ -91,7 +91,7 @@
 	border-radius: 6px;
 }
 
-.i-ham2 {
+.ham2 {
 	margin: 6px 0px;
 }
 
@@ -99,16 +99,16 @@
 /* --------------- SECTION_CONTAINER ----------------- */
 /* --------------------------------------------------- */
 
-.i-section-wrapper {
+.section-wrapper {
 	padding-top: 80px;
 }
 
-.i-content-spacing {
+.content-spacing {
 	padding: 0 18px;
 	max-width: 1955px;
 }
 
-.i-content-header {
+.content-header {
 	color: #fff;
 	padding: 16px 0;
 	font-size: 24px;
@@ -116,13 +116,13 @@
 	line-height: 28px;
 }
 
-.i-content-grid {
+.content-grid {
 	display: grid;
 	grid-gap: 16px;
 	grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
 }
 
-.i-content-image {
+.content-image {
 	border-radius: 50%;
 	height: 100%;
 	width: 100%;
@@ -130,7 +130,7 @@
 
 /* ----------------------------------------------------- */
 
-.i-container {
+.container {
 	display: flex;
 	flex-direction: column;
 	width: 100%;
@@ -139,14 +139,14 @@
 	padding: 16px;
 }
 
-.i-content {
+.content {
 	/* background-color: #44464E;  */
 	border-radius: 50%;
 	box-shadow: 0 10px 30px 0 rgba(0, 0, 0, .3), 0 1px 2px 0 rgba(0, 0, 0, .2);
 	margin-bottom: 16px;
 }
 
-.i-button {
+.button {
 	margin-top: 10px;
 	width: 100%; 
 	height: 35px;
@@ -157,7 +157,7 @@
 	font-size: 12px;
 }
 
-.i-button:hover {
+.button:hover {
 	background-color: #1ed760;
 }
 

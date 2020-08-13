@@ -1,0 +1,5 @@
+<template src="../components/signup.html"></template>
+<script src="../components/script/signup.js"></script>
+<style scoped> 
+	@import url("../components/style/signup.css");
+</style> 
