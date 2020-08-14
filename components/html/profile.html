@@ -1,0 +1,53 @@
+<div class="section-wrapper">
+	<section class="content-spacing">
+		<div class="content-header">
+			<div class="proj-content-header">
+				<h2 class="proj-content-header-item">{{ jsonData[0].navbar_menu[0].ru }}</h2>
+				<span class="proj-content-header-count">{{ jsonData[0].navbar_menu[0].count }}</span>
+			</div>
+			<nav class="content-navbar">
+				<ul>
+					<li class="content-navbar-item">
+						<div class="content-navbar-search">
+							<input class="form-search" type="text" value="" placeholder="Поиск...">
+							<button class="content-navbar-button">
+								<span class="button-icon fas fa-search"></span>
+							</button>
+						</div>
+					</li>
+					<li class="content-navbar-item">
+						<button class="content-navbar-button">
+								<span class="button-icon fas fa-trash"></span>
+						</button>
+					</li>
+					<li class="content-navbar-item">
+						<button class="content-navbar-button">
+							<span class="button-icon fas fa-plus"></span>
+						</button>
+					</li>
+					<li class="content-navbar-item">
+						<button class="content-navbar-button">
+							<span class="button-icon fas fa-ellipsis-v"></span>
+						</button>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<div class="main-content">
+			<ol class="content-grid">
+				<li class="grid-container" v-for="n in jsonData[0].navbar_menu[1].count">
+					<div class="proj-image-container">
+						<img class="proj-image" src="~/assets/logo.png" alt="">
+					</div>
+					<div class="proj-information">
+						<div class="proj-name">
+							<a class="proj-name-item" href="/">TeeMate</a>
+						<div class="proj-private" :class="[private ? 'fas fa-lock' : 'fas fa-lock-open']"></div>
+						</div>
+						<p class="proj-description">description of your project</p>
+					</div>
+				</li>
+			</ol>
+		</div>
+	</section>
+</div>

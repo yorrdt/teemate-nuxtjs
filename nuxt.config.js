@@ -13,7 +13,8 @@ export default {
 			{ rel: 'favicon', href: '/favicon.ico' }
 		]
 	},
+	components: true,
 	css: [
-		'~/assets/default.css'
+		'~/assets/main.css'
 	]
 }

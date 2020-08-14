@@ -1,5 +1,4 @@
-<template src="../components/index.html"></template>
-<script src="../components/script/index.js"></script>
+<template src="../components/html/index.html"></template>
 <style scoped> 
 	@import url("../components/style/index.css");
 </style> 
