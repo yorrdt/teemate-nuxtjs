@@ -2,16 +2,16 @@
 	<div class="footer-wrapper">
 		<footer class="footer-container">
 			<ul>
-				<li></li>
-				<li></li>
+				<li>© 2020 TeeMate</li>
+				<li>Terms</li>
 				<li>
 					<div class="footer-ico header-title">
 						<img class="account-image" height="32px" width="32px" src="~/assets/logo.png" alt="">
 						<span>TeeMate<sup>TM</sup></span>
 					</div>
 				</li>
-				<li></li>
-				<li></li>
+				<li>Contact</li>
+				<li>About</li>
 			</ul>
 		</footer>
 	</div>
@@ -38,11 +38,10 @@
 .footer-wrapper {
 	width: 100%;
 	min-width: 320px;
-	height: 100px;
 }
 
 .footer-container {
-	padding: 24px 16px;
+	padding: 24px 32px;
 	border-top: 1px solid #333;
 }
 

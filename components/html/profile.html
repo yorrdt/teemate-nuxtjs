@@ -1,10 +1,18 @@
 <div class="section-wrapper">
 	<section class="content-spacing">
 		<div class="content-header">
-			<div class="proj-content-header">
-				<h2 class="proj-content-header-item">{{ jsonData[0].navbar_menu[0].ru }}</h2>
-				<span class="proj-content-header-count">{{ jsonData[0].navbar_menu[0].count }}</span>
-			</div>
+			<nav class="proj-panel">
+				<a class="proj-panel-item proj-panel-default" href="">
+					<div class="panel-item-icon fas fa-sign"></div>
+					<span class="panel-item-text">Топ проектов</span>
+					<span class="proj-content-header-count">0</span>
+				</a>
+				<a class="proj-panel-item panel-active" href="">
+					<div class="panel-item-icon fas fa-code"></div>
+					<span class="panel-item-text">Мои проекты</span>
+					<span class="proj-content-header-count">{{ Menu[0].navbar_menu[1].count }}</span>
+				</a>
+			</nav>
 			<nav class="content-navbar">
 				<ul>
 					<li class="content-navbar-item">
@@ -35,16 +43,37 @@
 		</div>
 		<div class="main-content">
 			<ol class="content-grid">
-				<li class="grid-container" v-for="n in jsonData[0].navbar_menu[1].count">
-					<div class="proj-image-container">
-						<img class="proj-image" src="~/assets/logo.png" alt="">
-					</div>
-					<div class="proj-information">
-						<div class="proj-name">
-							<a class="proj-name-item" href="/">TeeMate</a>
-						<div class="proj-private" :class="[private ? 'fas fa-lock' : 'fas fa-lock-open']"></div>
+				<li class="grid-container" v-for="n in Proj[0].project_info">
+					<div class="proj-container-info">
+						<div class="proj-image-container">
+							<img class="proj-image" src="~/assets/logo.png" alt="">
 						</div>
-						<p class="proj-description">description of your project</p>
+						<div class="proj-information">
+							<div>
+								<a class="proj-name-item" href="/">
+									<span>{{ Proj[0].project_info[0].name }}</span>
+									<!-- <span class="proj-item-version">{{ '[v' + Proj[0].project_info[0].version + ']' }}</span> -->
+								</a>
+							</div>
+							<p class="proj-description">{{ Proj[0].project_info[0].description }}</p>
+						</div>
+					</div>
+					<div class="proj-back">
+						<div class="proj-back-item">
+							<span class="back-item-icon" v-bind:class="{ 'fas fa-lock' : Proj[0].project_info[0].private }"></span>
+						</div>
+						<div class="proj-back-item">
+							<span class="back-item-icon fas fa-heart"></span>
+							<span>{{ Proj[0].project_info[0].proj_back[0].likes }}</span>
+						</div>
+						<div class="proj-back-item">
+							<span class="back-item-icon fas fa-comment"></span>
+							<span>{{ Proj[0].project_info[0].proj_back[0].comments }}</span>
+						</div>
+						<div class="proj-back-item">
+							<span class="back-item-icon fas fa-eye"></span>
+							<span>{{ Proj[0].project_info[0].proj_back[0].views }}</span>
+						</div>
 					</div>
 				</li>
 			</ol>

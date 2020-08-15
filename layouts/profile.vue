@@ -21,7 +21,7 @@
 .content-wrapper {
 	width: 100%;
 	margin-top: 54px;
-	min-height: calc(100vh - (54px + 100px)); /* 100vh - (size of header + size of footer) */
+	min-height: calc(100vh - (54px + 84px)); /* 100vh - (size of header + size of footer) */
 	min-width: 320px;
 }
 

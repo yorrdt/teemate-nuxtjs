@@ -1,11 +1,12 @@
-import json from '../json/menu.json';
+import jsonMenu from '../json/menu.json';
+import jsonProj from '../json/proj.json';
 
 export default {
 	layout: 'profile',
 	data() {
 		return {
-			jsonData: json,
-			private: true
+			Menu: jsonMenu,
+			Proj: jsonProj
 		}
 	},
 }

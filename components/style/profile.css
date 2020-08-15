@@ -16,14 +16,43 @@
 	align-items: center;
 	justify-content: space-between;
 	color: var(--white);
-	padding: 16px 0;
+	margin-top: 16px;
+	margin-bottom: 32px;
+	border-bottom: 1px solid #333
 }
 
 /* --------------------------------------------- */
 
-.proj-content-header {
+.proj-panel {
 	display: flex;
 	align-items: center;
+	flex-direction: row;
+}
+
+.proj-panel-item {
+	padding: 8px 16px;
+	font-size: 14px;
+	line-height: 30px;
+	text-align: center;
+	white-space: nowrap;
+}
+
+.proj-panel-default:hover, .proj-panel-default:focus {
+	text-decoration: none;
+	outline: none;
+	border-bottom-color: var(--gray-color);
+	transition-timing-function: ease-out;
+	transition-duration: .12s;
+}
+
+.proj-panel-default {
+	border-bottom: 2px solid transparent;
+	transition: border-bottom-color .36s ease-in;
+	cursor: pointer;
+}
+
+.panel-active {
+	border-bottom: 2px solid #ff8a00;
 }
 
 .proj-content-header-item {
@@ -39,6 +68,18 @@
 	border: 1px solid transparent;
 	border-radius: 2em;
 	margin-bottom: -4px;
+	margin-left: 4px;
+}
+
+.panel-item-icon {
+	width: 16px;
+	height: 13px;
+	font-size: .9em;
+	margin-right: 4px;
+}
+
+.panel-item-text {
+	font-weight: 600;
 }
 
 /* --------------------------------------------- */
@@ -104,10 +145,6 @@
 
 /* ----------------------------------------------------- */
 
-.main-content {
-	
-}
-
 .content-grid {
 	display: grid;
 	grid-gap: 16px;
@@ -124,24 +161,30 @@
 
 .grid-container {
 	display: flex;
-	flex-direction: row;
-	align-items: center;
+	flex-direction: column;
 	width: 100%;
 	background-color: var(--container);
 	border-radius: 8px;
-	padding: 16px;
+	padding: 16px 16px 0px;
+}
+
+.proj-container-info {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding-bottom: 16px;
 }
 
 .proj-information {
 	flex: auto;
 }
 
-.proj-name {
+.proj-name-item {
 	font-size: 28px;
 	display: flex;
 	align-items: center;
 	cursor: pointer;
-	line-height: 28px;
+	line-height: 32px;
 }
 
 .proj-image-container {
@@ -165,4 +208,23 @@
 	font-size: .4em;
 	margin-left: 6px;
 	margin-bottom: -4px;
+}
+
+.proj-back-item {
+	padding: 8px;
+}
+
+.proj-back {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	background-color: #484848;
+	border-top-right-radius: 8px;
+	border-top-left-radius: 8px;
+	padding: 0 4px;
+}
+
+.back-item-icon {
+	width: 16px;
+	height: 14px;
 }

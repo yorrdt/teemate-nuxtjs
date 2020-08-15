@@ -1,0 +1,20 @@
+[
+	{
+		"project_info": [
+			{
+				"name": "TeeMate",
+				"description": "platform",
+				"version": "1.0.0",
+				"author": "Egor Moroz",
+				"private": true,
+				"proj_back": [
+					{
+						"likes": 16,
+						"comments": 4,
+						"views": 48
+					}
+				]
+			}
+		]
+	}
+]

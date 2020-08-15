@@ -5,7 +5,7 @@
 				<li class="navbar-item">
 					<a class="menu-item" href="/">
 						<div class="item-icon fas fa-hammer">
-							<span class="notif-count">{{ jsonData[0].navbar_menu[0].count }}</span>
+							<!-- <span class="notif-count">{{ jsonData[0].navbar_menu[0].count }}</span> -->
 						</div>
 						<span class="text-item">{{ jsonData[0].navbar_menu[0].ru }}</span>
 					</a>
@@ -13,7 +13,7 @@
 				<li class="navbar-item">
 					<a class="menu-item" href="/">
 						<div class="item-icon fas fa-check">
-							<span class="notif-count">{{ jsonData[0].navbar_menu[1].count }}</span>
+							<!-- <span class="notif-count">{{ jsonData[0].navbar_menu[1].count }}</span> -->
 						</div>
 						<span class="text-item">{{ jsonData[0].navbar_menu[1].ru }}</span>
 					</a>
@@ -21,7 +21,7 @@
 				<li class="navbar-item">
 					<a class="menu-item" href="/">
 						<div class="item-icon fas fa-comment">
-							<span class="notif-count">{{ jsonData[0].navbar_menu[2].count }}</span>
+							<!-- <span class="notif-count">{{ jsonData[0].navbar_menu[2].count }}</span> -->
 						</div>
 						<span class="text-item">{{ jsonData[0].navbar_menu[2].ru }}</span>
 					</a>
@@ -29,7 +29,7 @@
 				<li class="navbar-item">
 					<a class="menu-item" href="/">
 						<div class="item-icon fas fa-handshake">
-							<span class="notif-count">{{ jsonData[0].navbar_menu[3].count }}</span>
+							<!-- <span class="notif-count">{{ jsonData[0].navbar_menu[3].count }}</span> -->
 						</div>
 						<span class="text-item">{{ jsonData[0].navbar_menu[3].ru }}</span>
 					</a>
@@ -37,7 +37,7 @@
 				<li class="navbar-item">
 					<a class="menu-item" href="/">
 						<div class="item-icon fas fa-quote-right">
-							<span class="notif-count">{{ jsonData[0].navbar_menu[4].count }}</span>
+							<!-- <span class="notif-count">{{ jsonData[0].navbar_menu[4].count }}</span> -->
 						</div>
 						<span class="text-item">{{ jsonData[0].navbar_menu[4].ru }}</span>
 					</a>
@@ -45,7 +45,7 @@
 				<li class="navbar-item">
 					<a class="menu-item" href="/">
 						<div class="item-icon fas fa-star">
-							<span class="notif-count">{{ jsonData[0].navbar_menu[5].count }}</span>
+							<!-- <span class="notif-count">{{ jsonData[0].navbar_menu[5].count }}</span> -->
 						</div>
 						<span class="text-item">{{ jsonData[0].navbar_menu[5].ru }}</span>
 					</a>
@@ -53,7 +53,7 @@
 				<li class="navbar-item">
 					<a class="menu-item" href="/">
 						<div class="item-icon fas fa-question">
-							<span class="notif-count">{{ jsonData[0].navbar_menu[6].count }}</span>
+							<!-- <span class="notif-count">{{ jsonData[0].navbar_menu[6].count }}</span> -->
 						</div>
 						<span class="text-item">{{ jsonData[0].navbar_menu[6].en }}</span>
 					</a>
@@ -80,8 +80,6 @@
 .navbar-wrapper {
 	width: 180px;
 	display: flex;
-	flex-shrink: 0;
-	flex-grow: 0;
 	flex-direction: column;
 	position: fixed;
 }
@@ -121,8 +119,8 @@
 	transition-timing-function: linear;
 }
 
+/*
 .notif-count {
-	/* display: none; */
 	position: absolute;
 	left: 10px;
 	bottom: -6px;
@@ -135,8 +133,10 @@
 	border: 2px solid #222;
 	border-radius: 2em;
 	background-color: #ff1122;
-	font-family: sans-serif;
+	font-weight: 800;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
 }
+*/
 
 .item-icon {
 	position: relative;
@@ -152,8 +152,6 @@
 	overflow: hidden;
 	font-size: 14px;
 	font-weight: 600;
-	line-height: 16px;
-	letter-spacing: normal;
-	text-transform: none;
+	line-height: 20px;
 }
 </style>
