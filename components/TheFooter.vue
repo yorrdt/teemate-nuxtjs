@@ -18,26 +18,10 @@
 </template>
 
 <style scoped>
-.header-title {
-	display: flex;
-	align-items: center;
-	outline: none;
-}
-
-.header-title span {
-	font-size: 26px;
-	font-weight: 500;
-}
-
-.header-title > span > sup {
-	position: relative;
-	font-size: 4pt;
-	letter-spacing: .8px;
-}
-
 .footer-wrapper {
 	width: 100%;
 	min-width: 320px;
+	margin-top: 128px;
 }
 
 .footer-container {
@@ -57,5 +41,22 @@
 	align-items: center;
 	justify-content: space-between;
 	flex-direction: row;
+}
+
+.header-title {
+	display: flex;
+	align-items: center;
+	outline: none;
+}
+
+.header-title span {
+	font-size: 26px;
+	font-weight: 500;
+}
+
+.header-title > span > sup {
+	position: relative;
+	font-size: 4pt;
+	letter-spacing: .8px;
 }
 </style>

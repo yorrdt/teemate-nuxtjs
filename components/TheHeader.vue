@@ -82,7 +82,7 @@
 	width: 100%;
 	background-color: var(--black); /* #121212 */
 	min-width: 320px;
-	position: fixed;
+	position: relative;
 	z-index: 18;
 }
 

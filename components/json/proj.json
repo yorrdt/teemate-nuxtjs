@@ -3,15 +3,72 @@
 		"project_info": [
 			{
 				"name": "TeeMate",
-				"description": "platform",
+				"description": "Social platform for programmers",
+				"version": "0.1",
+				"author": "Egor Moroz",
+				"icon_path": "",
+				"private": true,
+				"proj_back": [
+					{
+						"stars": 0,
+						"comments": 0,
+						"views": 0
+					}
+				]
+			},
+			{
+				"name": "GLEngine",
+				"description": "3D Engine",
 				"version": "1.0.0",
+				"author": "Vladislav Romanov",
+				"private": true,
+				"proj_back": [
+					{
+						"stars": 0,
+						"comments": 0,
+						"views": 0
+					}
+				]
+			},
+			{
+				"name": "ASVIAR",
+				"description": "abstract spatial visualization in augmented reality",
+				"version": "1.0.0",
+				"author": "Egor Moroz",
+				"private": false,
+				"proj_back": [
+					{
+						"stars": 7,
+						"comments": 4,
+						"views": 15
+					}
+				]
+			},
+			{
+				"name": "Post Craft",
+				"description": "post-apocalyptic mod for Minecraft Pocket Edition using Inner Core",
+				"version": "0.1",
 				"author": "Egor Moroz",
 				"private": true,
 				"proj_back": [
 					{
-						"likes": 16,
-						"comments": 4,
-						"views": 48
+						"stars": 0,
+						"comments": 0,
+						"views": 0
+					}
+				]
+			},
+			{
+				"name": "ICBook",
+				"description": "Android app for studying how to write mods for Minecraft Pocket Edition on Inner Core",
+				"version": "0.1",
+				"author": "Egor Moroz",
+				"private": true,
+				"proj_back": [
+					{
+						"stars": 0,
+						"comments": 0,
+						"views": 0
 					}
 				]
 			}

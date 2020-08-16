@@ -78,23 +78,17 @@
 
 <style scoped>
 .navbar-wrapper {
-	width: 180px;
-	display: flex;
-	flex-direction: column;
-	position: fixed;
+	width: 190px;
 }
 
 .navbar-container {
-	display: flex;
-	flex-shrink: 0;
-	flex-grow: 0;
-	flex-direction: column;
-	
-	padding-top: 20px;
+	position: sticky;
+	top: 0;
+	margin-top: 16px;
+	padding-top: 8px;
 	user-select: none;
 	cursor: default;
 	width: 100%;
-	margin-bottom: 40px;
 }
 
 .navbar-item:focus, .navbar-item:hover { 

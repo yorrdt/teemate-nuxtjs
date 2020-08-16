@@ -3,22 +3,24 @@
 /* --------------------------------------------------- */
 
 .section-wrapper {
-	width: calc(100% - 180px);
-	margin-left: 180px;
+	width: calc(100% - 190px);
 }
 
 .content-spacing {
-	padding: 0 16px 32px 16px;
+	padding: 0 16px;
 }
 
 .content-header {
+	position: sticky;
+	top: 0;
+	z-index: 8;
+	background-color: var(--background);
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	color: var(--white);
 	margin-top: 16px;
-	margin-bottom: 32px;
-	border-bottom: 1px solid #333
+	border-bottom: 1px solid #333;
 }
 
 /* --------------------------------------------- */
@@ -146,6 +148,7 @@
 /* ----------------------------------------------------- */
 
 .content-grid {
+	padding-top: 32px;
 	display: grid;
 	grid-gap: 16px;
 	grid-template-columns: repeat(auto-fill, minmax(460px, 1fr));
@@ -175,14 +178,8 @@
 	padding-bottom: 16px;
 }
 
-.proj-information {
-	flex: auto;
-}
-
 .proj-name-item {
 	font-size: 28px;
-	display: flex;
-	align-items: center;
 	cursor: pointer;
 	line-height: 32px;
 }
@@ -212,6 +209,7 @@
 
 .proj-back-item {
 	padding: 8px;
+	cursor: pointer;
 }
 
 .proj-back {

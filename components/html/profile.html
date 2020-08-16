@@ -10,10 +10,10 @@
 				<a class="proj-panel-item panel-active" href="">
 					<div class="panel-item-icon fas fa-code"></div>
 					<span class="panel-item-text">Мои проекты</span>
-					<span class="proj-content-header-count">{{ Menu[0].navbar_menu[1].count }}</span>
+					<span class="proj-content-header-count">{{ Object.keys(Proj[0].project_info).length }}</span>
 				</a>
 			</nav>
-			<nav class="content-navbar">
+			<div class="content-navbar">
 				<ul>
 					<li class="content-navbar-item">
 						<div class="content-navbar-search">
@@ -25,25 +25,28 @@
 					</li>
 					<li class="content-navbar-item">
 						<button class="content-navbar-button">
-								<span class="button-icon fas fa-trash"></span>
+							<span class="button-icon fas fa-plus"></span>
 						</button>
 					</li>
 					<li class="content-navbar-item">
 						<button class="content-navbar-button">
-							<span class="button-icon fas fa-plus"></span>
+								<span class="button-icon fas fa-trash"></span>
 						</button>
 					</li>
 					<li class="content-navbar-item">
 						<button class="content-navbar-button">
 							<span class="button-icon fas fa-ellipsis-v"></span>
 						</button>
+						<ul>
+							<li></li>
+						</ul>
 					</li>
 				</ul>
-			</nav>
+			</div>
 		</div>
 		<div class="main-content">
 			<ol class="content-grid">
-				<li class="grid-container" v-for="n in Proj[0].project_info">
+				<li class="grid-container" v-for="ProjData in Proj[0].project_info">
 					<div class="proj-container-info">
 						<div class="proj-image-container">
 							<img class="proj-image" src="~/assets/logo.png" alt="">
@@ -51,28 +54,27 @@
 						<div class="proj-information">
 							<div>
 								<a class="proj-name-item" href="/">
-									<span>{{ Proj[0].project_info[0].name }}</span>
-									<!-- <span class="proj-item-version">{{ '[v' + Proj[0].project_info[0].version + ']' }}</span> -->
+									<span>{{ ProjData.name }}</span>
 								</a>
 							</div>
-							<p class="proj-description">{{ Proj[0].project_info[0].description }}</p>
+							<p class="proj-description">{{ ProjData.description }}</p>
 						</div>
 					</div>
 					<div class="proj-back">
 						<div class="proj-back-item">
-							<span class="back-item-icon" v-bind:class="{ 'fas fa-lock' : Proj[0].project_info[0].private }"></span>
+							<span class="back-item-icon" v-bind:class="{ 'fas fa-lock' : ProjData.private }"></span>
 						</div>
 						<div class="proj-back-item">
-							<span class="back-item-icon fas fa-heart"></span>
-							<span>{{ Proj[0].project_info[0].proj_back[0].likes }}</span>
+							<span class="back-item-icon fas fa-star"></span>
+							<span>{{ ProjData.proj_back[0].stars }}</span>
 						</div>
 						<div class="proj-back-item">
 							<span class="back-item-icon fas fa-comment"></span>
-							<span>{{ Proj[0].project_info[0].proj_back[0].comments }}</span>
+							<span>{{ ProjData.proj_back[0].comments }}</span>
 						</div>
 						<div class="proj-back-item">
 							<span class="back-item-icon fas fa-eye"></span>
-							<span>{{ Proj[0].project_info[0].proj_back[0].views }}</span>
+							<span>{{ ProjData.proj_back[0].views }}</span>
 						</div>
 					</div>
 				</li>
