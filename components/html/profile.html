@@ -16,6 +16,11 @@
 			<div class="content-navbar">
 				<ul>
 					<li class="content-navbar-item">
+						<button class="content-navbar-button">
+							<span class="button-icon fas fa-filter"></span>
+						</button>
+					</li>
+					<li class="content-navbar-item">
 						<div class="content-navbar-search">
 							<input class="form-search" type="text" value="" placeholder="Поиск...">
 							<button class="content-navbar-button">
@@ -61,7 +66,7 @@
 						</div>
 					</div>
 					<div class="proj-back">
-						<div class="proj-back-item">
+						<div class="proj-back-item" v-if="ProjData.private">
 							<span class="back-item-icon" v-bind:class="{ 'fas fa-lock' : ProjData.private }"></span>
 						</div>
 						<div class="proj-back-item">
