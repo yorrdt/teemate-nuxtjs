@@ -20,7 +20,7 @@
 
 .content-wrapper {
 	width: 100%;
-	min-height: calc(100vh - 84px)); /* 100vh - size of footer */
+	min-height: calc(100vh - (84px +  128px + 54px)); /* 100vh - (size of footer + size of footer matgin + header size) */
 	min-width: 320px;
 }
 

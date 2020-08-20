@@ -5,10 +5,10 @@
 		</span>
 		<header class="header-container">
 			<div class="navbar-header">
-				<a class="header-title" href="/">
+				<NuxtLink class="header-title" to="/main">
 					<img class="account-image" height="32px" width="32px" src="~/assets/logo.png" alt="">
 					<span>TeeMate<sup>TM</sup></span>
-				</a>
+				</NuxtLink>
 			</div>
 			<div class="header-right">
 				<div class="notif-item">
@@ -24,17 +24,17 @@
 					</button>
 					<ul class="dropdown-menu" v-show="visible">
 						<li>
-							<a class="dropdown-menu-item" href="/" target="_blank">{{ jsonData[0].dropdown_menu[0].ru }}</a>
+							<NuxtLink class="dropdown-menu-item" to="/profile">{{ jsonData[0].dropdown_menu[0].text }}</NuxtLink>
 						</li>
 						<li>
-							<a class="dropdown-menu-item" href="/" target="_blank">{{ jsonData[0].dropdown_menu[1].ru }}</a>
+							<a class="dropdown-menu-item" href="/" target="_blank">{{ jsonData[0].dropdown_menu[1].text }}</a>
 						</li>
 						<li>
-							<a class="dropdown-menu-item" href="/" target="_blank">{{ jsonData[0].dropdown_menu[2].ru }}</a>
+							<a class="dropdown-menu-item" href="/" target="_blank">{{ jsonData[0].dropdown_menu[2].text }}</a>
 						</li>
 						<hr></hr>
 						<li>
-							<NuxtLink class="dropdown-menu-item" to="/">{{ jsonData[0].dropdown_menu[3].ru }}</NuxtLink>
+							<NuxtLink class="dropdown-menu-item" to="/">{{ jsonData[0].dropdown_menu[3].text }}</NuxtLink>
 						</li>
 					</ul>
 				</div>

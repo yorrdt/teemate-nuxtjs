@@ -7,7 +7,7 @@
 						<div class="item-icon fas fa-hammer">
 							<!-- <span class="notif-count">{{ jsonData[0].navbar_menu[0].count }}</span> -->
 						</div>
-						<span class="text-item">{{ jsonData[0].navbar_menu[0].ru }}</span>
+						<span class="text-item">{{ jsonData[0].navbar_menu[0].text }}</span>
 					</a>
 				</li>
 				<li class="navbar-item">
@@ -15,7 +15,7 @@
 						<div class="item-icon fas fa-check">
 							<!-- <span class="notif-count">{{ jsonData[0].navbar_menu[1].count }}</span> -->
 						</div>
-						<span class="text-item">{{ jsonData[0].navbar_menu[1].ru }}</span>
+						<span class="text-item">{{ jsonData[0].navbar_menu[1].text }}</span>
 					</a>
 				</li>
 				<li class="navbar-item">
@@ -23,7 +23,7 @@
 						<div class="item-icon fas fa-comment">
 							<!-- <span class="notif-count">{{ jsonData[0].navbar_menu[2].count }}</span> -->
 						</div>
-						<span class="text-item">{{ jsonData[0].navbar_menu[2].ru }}</span>
+						<span class="text-item">{{ jsonData[0].navbar_menu[2].text }}</span>
 					</a>
 				</li>
 				<li class="navbar-item">
@@ -31,7 +31,7 @@
 						<div class="item-icon fas fa-handshake">
 							<!-- <span class="notif-count">{{ jsonData[0].navbar_menu[3].count }}</span> -->
 						</div>
-						<span class="text-item">{{ jsonData[0].navbar_menu[3].ru }}</span>
+						<span class="text-item">{{ jsonData[0].navbar_menu[3].text }}</span>
 					</a>
 				</li>
 				<li class="navbar-item">
@@ -39,7 +39,7 @@
 						<div class="item-icon fas fa-quote-right">
 							<!-- <span class="notif-count">{{ jsonData[0].navbar_menu[4].count }}</span> -->
 						</div>
-						<span class="text-item">{{ jsonData[0].navbar_menu[4].ru }}</span>
+						<span class="text-item">{{ jsonData[0].navbar_menu[4].text }}</span>
 					</a>
 				</li>
 				<li class="navbar-item">
@@ -47,7 +47,7 @@
 						<div class="item-icon fas fa-star">
 							<!-- <span class="notif-count">{{ jsonData[0].navbar_menu[5].count }}</span> -->
 						</div>
-						<span class="text-item">{{ jsonData[0].navbar_menu[5].ru }}</span>
+						<span class="text-item">{{ jsonData[0].navbar_menu[5].text }}</span>
 					</a>
 				</li>
 				<li class="navbar-item">
@@ -55,7 +55,7 @@
 						<div class="item-icon fas fa-question">
 							<!-- <span class="notif-count">{{ jsonData[0].navbar_menu[6].count }}</span> -->
 						</div>
-						<span class="text-item">{{ jsonData[0].navbar_menu[6].en }}</span>
+						<span class="text-item">{{ jsonData[0].navbar_menu[6].text }}</span>
 					</a>
 				</li>
 			</ul>
