@@ -18,7 +18,7 @@
 				"count": 3
 			},
 			{
-				"text": "Followers",
+				"text": "Following",
 				"count": 35
 			}, 
 			{
@@ -32,16 +32,24 @@
 		],
 		"dropdown_menu": [
 			{
-				"text": "Профиль"
+				"text": "Profile"
 			},
 			{
-				"text": "Настройки"
+				"text": "Settings"
 			},
 			{
-				"text": "Помощь"
+				"text": "Help"
 			},
 			{
-				"text": "Выйти"
+				"text": "Sign out"
+			}
+		],
+		"proj_panel": [
+			{
+				"text": "Top projects"
+			},
+			{
+				"text": "My projects"
 			}
 		]
 	}

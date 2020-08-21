@@ -4,12 +4,12 @@
 			<nav class="proj-panel">
 				<a class="proj-panel-item proj-panel-default" href="">
 					<div class="panel-item-icon fas fa-list-ol"></div>
-					<span class="panel-item-text">Топ проектов</span>
+					<span class="panel-item-text">{{ Menu[0].proj_panel[0].text }}</span>
 					<span class="proj-content-header-count">0</span>
 				</a>
 				<a class="proj-panel-item panel-active" href="">
 					<div class="panel-item-icon fas fa-code"></div>
-					<span class="panel-item-text">Мои проекты</span>
+					<span class="panel-item-text">{{ Menu[0].proj_panel[1].text }}</span>
 					<span class="proj-content-header-count">{{ Object.keys(Proj[0].project_info).length }}</span>
 				</a>
 			</nav>
