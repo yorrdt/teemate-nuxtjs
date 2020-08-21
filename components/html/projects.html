@@ -3,7 +3,7 @@
 		<div class="content-header">
 			<nav class="proj-panel">
 				<a class="proj-panel-item proj-panel-default" href="">
-					<div class="panel-item-icon fas fa-sign"></div>
+					<div class="panel-item-icon fas fa-list-ol"></div>
 					<span class="panel-item-text">Топ проектов</span>
 					<span class="proj-content-header-count">0</span>
 				</a>
@@ -22,7 +22,7 @@
 					</li>
 					<li class="content-navbar-item">
 						<div class="content-navbar-search">
-							<input class="form-search" type="text" value="" placeholder="Поиск...">
+							<input class="form-search" type="text" placeholder="Поиск...">
 							<button class="content-navbar-button">
 								<span class="button-icon fas fa-search"></span>
 							</button>
@@ -57,11 +57,9 @@
 							<img class="proj-image" src="~/assets/logo.png" alt="">
 						</div>
 						<div class="proj-information">
-							<div>
-								<a class="proj-name-item" href="/">
-									<span>{{ ProjData.name }}</span>
-								</a>
-							</div>
+							<a class="proj-name-item" href="/">
+								<span>{{ ProjData.name }}</span>
+							</a>
 							<p class="proj-description">{{ ProjData.description }}</p>
 						</div>
 					</div>

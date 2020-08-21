@@ -8,6 +8,10 @@
 	--gray-color: #b3b3b3;
 	--container-light: #484848;
 	--container-lighter: #585858;
+	--panel-orange: #ff8a00;
+	--green: #2ebc4f;
+	--red: #cb2431;
+	--border: #333;
 }
 
 * {

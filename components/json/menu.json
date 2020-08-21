@@ -2,27 +2,27 @@
 	{
 		"navbar_menu": [
 			{
-				"text": "Проекты",
+				"text": "Projects",
 				"count": 1
 			}, 
 			{
-				"text": "Задачи",
+				"text": "Tasks",
 				"count": 48
 			},
 			{
-				"text": "Сообщения",
+				"text": "Messages",
 				"count": 6
 			}, 
 			{
-				"text": "Тиммейты",
+				"text": "Teammates",
 				"count": 3
 			},
 			{
-				"text": "Подписки",
+				"text": "Followers",
 				"count": 35
 			}, 
 			{
-				"text": "Закладки",
+				"text": "Bookmarks",
 				"count": "99+"
 			},
 			{

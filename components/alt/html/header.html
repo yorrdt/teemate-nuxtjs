@@ -1,0 +1,52 @@
+<div class="header-wrapper">
+	<span class="progress-bar">
+		<span class="progress-item" style="width: 0%;"></span>
+	</span>
+	<header class="header-container">
+		<div class="navbar-header">
+			<NuxtLink class="header-title" to="/home">
+				<img class="account-image" height="32px" width="32px" src="~/assets/logo.png" alt="">
+				<span>TeeMate<sup>TM</sup></span>
+			</NuxtLink>
+		</div>
+		<div class="header-right">
+			<div class="notif-item">
+				<a class="fas fa-bell" href="/"><span class="notif-point"></span></a>
+			</div>
+			<div class="account-menu" v-on:click="visible = !visible" v-on-clickaway="away">
+				<button class="account-button">
+					<figure class="account-avatar">
+						<img class="account-image" height="28px" width="28px" src="~/assets/logo.png" alt="">
+					</figure>
+					<span class="account-username">yorrdt</span>
+					<span class="dropdown" :class="[visible ? 'fas fa-angle-up' : 'fas fa-angle-down']"></span> 
+				</button>
+				<ul class="dropdown-menu" v-show="visible">
+					<li>
+						<a class="dropdown-menu-item" href="/">{{ jsonData[0].dropdown_menu[0].text }}</a>
+					</li>
+					<li>
+						<a class="dropdown-menu-item" href="/" target="_blank">{{ jsonData[0].dropdown_menu[1].text }}</a>
+					</li>
+					<li>
+						<a class="dropdown-menu-item" href="/" target="_blank">{{ jsonData[0].dropdown_menu[2].text }}</a>
+					</li>
+					<hr></hr>
+					<li>
+						<NuxtLink class="dropdown-menu-item" to="/">{{ jsonData[0].dropdown_menu[3].text }}</NuxtLink>
+					</li>
+				</ul>
+			</div>
+			<div></div>
+		</div>
+		<div class="mobile-navi">
+			<a class="hamburger-wrapper-ref" href="/">
+				<div class="hamburger">
+					<div class="ham1"></div>
+					<div class="ham2"></div>
+					<div class="ham3"></div>
+				</div>
+			</a>
+		</div>
+	</header>
+</div>
