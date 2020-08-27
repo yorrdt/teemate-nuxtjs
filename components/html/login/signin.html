@@ -2,13 +2,13 @@
 	<div class="main-form">
 		<NuxtLink class="form-header-teemate" to="/">TeeMate</NuxtLink>
 		<div class="form-header">Вход</div>
-		<form action="/home" method="POST">
+		<form>
 			<div class="user-form">
 				<label class="form-label">Username</label>
 				<input class="form-control" type="text" name="login" value="">
 				<label class="form-label">Пароль<a class="form-remind-password" href="/">Забыли пароль?</a></label>
 				<input class="form-control" type="password" name="password">
-				<button class="submit-button-primary" type="submit" name="do_login">Войти</button>
+				<NuxtLink class="submit-button-primary" type="submit" to="/home">Войти</NuxtLink>
 			</div>
 		</form>
 		<div class="form-additionals">

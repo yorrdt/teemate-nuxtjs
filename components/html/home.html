@@ -1,3 +1,41 @@
-<div>
-	
+<div class="section-wrapper">
+    <section class="section-container">
+        <div class="article-wrapper">
+            <article class="article-container">
+                <div class="feedback-content" v-for="n in 14">
+                    <div class="update-photo">
+                        <a class="photo-link" href="/">
+                            <img class="user-avatar" src="~/assets/logo.png" width="48px" height="48px" alt="">
+                        </a>
+                    </div>
+                    <div class="update-text">
+                        <div class="update-header">
+                            <div>
+                                <a class="bold-link">some her</a>
+                                doing something with
+                                <a class="bold-link">idk who</a>
+                                <span class="update-post-time">5 hours ago</span>
+                            </div>
+                        </div>
+                        <div class="update-content">
+                                <span>added some photo</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="aside-wrapper">
+            <aside class="aside-container">
+                <h2 class="popular-header">Most popular projects</h2>
+                <div class="popular-container" v-for="n in 3">
+                    <a class="popular-link">Name of project</a>
+                    <p class="popular-description">Some small description about project</p>
+                    <span class="popular-counts">
+                        <i class="fas fa-star"></i>
+                        8k
+                    </span>
+                </div>
+            </aside>
+        </div>
+    </section>
 </div>

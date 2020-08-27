@@ -3,7 +3,7 @@
 		<div class="main-form">
 			<NuxtLink class="form-header-teemate" to="/">TeeMate</NuxtLink>
 			<div class="form-header">Регистрация</div>
-			<form action="/home" method="POST">
+			<form>
 				<div class="user-form">
 					<label class="form-label">Username</label>
 					<input class="form-control" type="text" name="login" value="">
@@ -13,7 +13,7 @@
 					<input class="form-control" type="password" name="password">
 					<label class="form-label">Пароль еще раз</label>
 					<input class="form-control" type="password" name="password_repeat">
-					<button class="submit-button-primary" type="submit" name="do_signup">Зарегистрироваться</button>
+					<NuxtLink class="submit-button-primary" type="submit" to="/home">Зарегистрироваться</NuxtLink>
 				</div>
 			</form>
 			<div class="form-additionals">
