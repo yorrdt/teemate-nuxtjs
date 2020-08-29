@@ -14,39 +14,18 @@
 				</a>
 			</nav>
 			<div class="content-navbar">
-				<ul>
-					<li class="content-navbar-item">
-						<button class="content-navbar-button">
-							<span class="button-icon fas fa-filter"></span>
-						</button>
-					</li>
-					<li class="content-navbar-item">
-						<div class="content-navbar-search">
-							<input class="form-search" type="text" placeholder="Поиск...">
-							<button class="content-navbar-button">
-								<span class="button-icon fas fa-search"></span>
-							</button>
-						</div>
-					</li>
-					<li class="content-navbar-item">
-						<button class="content-navbar-button">
+				<form>
+					<div class="content-navbar-search">
+						<input class="form-search" type="text" placeholder="Find a project...">
+					</div>
+					<div class="content-navbar-items">
+						<!-- TO DO: Filter will be here -->
+						<NuxtLink class="button-link btn btn-primary" to="/">
 							<span class="button-icon fas fa-plus"></span>
-						</button>
-					</li>
-					<li class="content-navbar-item">
-						<button class="content-navbar-button">
-								<span class="button-icon fas fa-trash"></span>
-						</button>
-					</li>
-					<li class="content-navbar-item">
-						<button class="content-navbar-button">
-							<span class="button-icon fas fa-ellipsis-v"></span>
-						</button>
-						<ul>
-							<li></li>
-						</ul>
-					</li>
-				</ul>
+							New
+						</NuxtLink>
+					</div>
+				</form>
 			</div>
 		</div>
 		<div class="main-content">
