@@ -1,13 +1,12 @@
 <template>
 	<div class="main-container">
-		<TheHeader/>
+		<TheTightHeader/>
 		<div class="content-wrapper">
 			<main class="content-container">
-				<TheNavbar/>
 				<nuxt/>
 			</main>
 		</div>
-		<TheFooter/>
+		<TheTightFooter/>
 	</div>
 </template>
 
@@ -29,7 +28,7 @@
 	flex: auto;
 	flex-direction: row;
 	margin: 0 auto;
-	max-width: 1440px;
+	max-width: 960px;
 	padding: 0 16px;
 }
 </style>

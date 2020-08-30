@@ -113,6 +113,10 @@
 	color: var(--gray-color);
 }
 
+.form-search:focus {
+	border: 1px solid var(--container-lighter);
+}
+
 .button-link {
 	text-align: center;
 }

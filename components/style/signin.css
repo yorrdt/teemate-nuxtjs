@@ -48,7 +48,7 @@ form {
 }
 
 .form-header-teemate:hover {
-	color: hsla(0, 0%, 100%, .7);
+	color: var(--gray-color);
 }
 
 .form-header {
