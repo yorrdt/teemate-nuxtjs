@@ -9,4 +9,9 @@ export default {
 			Proj: jsonProj
 		}
 	},
+	head() {
+		return {
+			title: 'TeeMate · Projects'
+		}
+	}
 }

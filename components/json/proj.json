@@ -3,7 +3,7 @@
 		"project_info": [
 			{
 				"name": "TeeMate",
-				"description": "Social platform for programmers",
+				"description": "Social platform for finding like-minded people and joint development of projects",
 				"version": "0.1",
 				"author": "Egor Moroz",
 				"icon_path": "",
@@ -61,6 +61,20 @@
 			{
 				"name": "ICBook",
 				"description": "Android app for studying how to write mods for Minecraft Pocket Edition on Inner Core",
+				"version": "0.1",
+				"author": "Egor Moroz",
+				"private": true,
+				"proj_back": [
+					{
+						"stars": 0,
+						"comments": 0,
+						"views": 0
+					}
+				]
+			},
+			{
+				"name": "Volution->Eleftheria",
+				"description": "Procedurally generated universe",
 				"version": "0.1",
 				"author": "Egor Moroz",
 				"private": true,

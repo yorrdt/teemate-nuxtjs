@@ -1,16 +1,22 @@
 <div class="section-wrapper">
     <section class="section-container">
         <div class="profile-header">
-            <div class="profile-background"></div>
-            <div class="profile-subbackground">
-                <div class="profile-info">
-                    <img class="profile-avatar" src="~assets/logo.png" alt="">
-                    <div class="profile-edit">
-                        <NuxtLink class="profile-edit-button" to="/">Edit profile</NuxtLink>
+            <div class="profile-background">
+                <div class="background-blocks">
+                    <div class="profile-avatar-block">
+                        <img class="profile-avatar" src="~assets/logo.png" alt="">
                     </div>
                     <div class="profile-names">
-                        <span class="user-name">Egor Moroz</span>
-                        <span class="user-nickname">@yorrdt</span>
+                        <div class="user-name">Egor Moroz</div>
+                        <span class="user-status">Main developer of this website</span>
+                    </div>
+                    <div class="user-name-network">online</div>
+                </div>
+            </div>
+            <div class="profile-subbackground">
+                <div class="profile-info">
+                    <div class="profile-edit">
+                        <NuxtLink class="profile-edit-button" to="/">Edit profile</NuxtLink>
                     </div>
                 </div>
                 <div class="profile-subinfo">
@@ -42,7 +48,12 @@
             </div>
         </div>
         <div class="profile-content">
-            <div class="profile-post"></div>
+            <div class="profile-post">
+                <form class="profile-form">
+                    <textarea class="profile-form-input" type="text" placeholder="Write something..."></textarea>
+                    <!-- <button class="profile-form-button" type="button">Button</button> -->
+                </form>
+            </div>
         </div>
     </section>
 </div>

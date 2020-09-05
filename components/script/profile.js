@@ -1,3 +1,8 @@
 export default {
-    layout: 'tight'
+    layout: 'tight',
+    head() {
+        return {
+            title: 'TeeMate · Profile'
+        }
+    }
 }
