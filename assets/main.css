@@ -62,7 +62,7 @@ img {
 }
 
 /* ----------------------------------------------- */
-/* ----------------------------------------------- */
+/* --------------------- MEDIA ------------------- */
 /* ----------------------------------------------- */
 
 @media (prefers-color-scheme: light) {
@@ -77,4 +77,23 @@ img {
 		--black: #000;
 		--background: #121212;
 	}
+}
+
+
+
+.btn {
+	position: relative;
+	display: inline-block;
+	color: var(--white);
+	border-radius: 6px;
+	cursor: pointer;
+	padding: 5px 16px;
+	user-select: none;
+	line-height: 20px;
+	font-weight: 500;
+}
+
+.btn-primary {
+	background-color: var(--green);
+	border: 1px solid var(--green-dark);
 }

@@ -48,12 +48,38 @@
             </div>
         </div>
         <div class="profile-content">
-            <div class="profile-post">
-                <form class="profile-form">
-                    <textarea class="profile-form-input" type="text" placeholder="Write something..."></textarea>
-                    <!-- <button class="profile-form-button" type="button">Button</button> -->
-                </form>
-            </div>
+            <form class="profile-form" @submit.prevent="onSubmit">
+                <div class="profile-form-textarea">
+					<textarea class="profile-form-input" type="text" placeholder="Write something..." v-model="text"></textarea>
+				</div>
+                <div class="profile-form-button">
+					<div class="profile-form-icons">
+						<a class="form-icon fas fa-camera" href="/"></a>
+						<a class="form-icon fas fa-file" href="/"></a>
+						<a class="form-icon fas fa-music" href="/"></a>
+						<a class="form-icon fas fa-paint-brush" href="/"></a>
+						<a class="form-icon fas fa-chart-pie" href="/"></a>
+					</div>
+					<button class="btn btn-primary" type="submit">Опубликовать</button>
+				</div>
+            </form>
         </div>
+		<div class="user-post" v-for="postData in posts">
+			<div class="user-post-header">
+				<div class="user-post-avatar">
+					<img src="~assets/logo.png" alt="">
+				</div>
+                <div class="user-post-data">
+                    <span class="user-post-name">Egor Moroz</span>
+                    <span class="user-post-date">{{ postData.date }}</span>
+                </div>
+			</div>
+            <div class="user-post-article">
+                <p>{{ postData.text }}</p>
+            </div>
+            <div class="user-post-footer">
+
+            </div>
+		</div>
     </section>
 </div>
